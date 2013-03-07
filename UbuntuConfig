@@ -1,0 +1,50 @@
+Grub2安装
+	sudo -i
+	fdisk -l
+	mount /dev/sdaX /mnt
+	mount --bind /dev/ /mnt/dev
+	mount --bind /usr/ /mnt/usr
+	mount --bind /proc/ /mnt/proc
+	chroot /mnt
+	update-grub
+	grub-install /dev/sda
+GNome主题设置
+	GNome 高级设置
+关闭滚动条
+	gsettings set org.gnome.desktop.interface ubuntu-overlay-scrollbars false
+启用滚动条
+	gsettings reset org.gnome.desktop.interface ubuntu-overlay-scrollbars
+关闭图标位置
+	配置编辑器
+	apps/metacity/general:button_layout
+	->menu:minimize,maximize,close
+关闭Unity桌面硬盘
+	Nautilus-操作配置工具
+启动器图标
+	/usr/shared/applications *.desktop
+Sublime Text 2
+	Package Control
+	ZenCoding
+	ThinkPhp
+	InputHelper
+	字体设置：Setting-User
+Eclipse
+	！MarketPlace
+	Sublipse
+	JavaHL
+	Eclipse Theme
+特效
+	CompizConfig
+影音
+	SMPlayer
+PDF
+	Okular
+	Wine Foxit
+SVN
+	RabbitCVS
+XAMPP
+	tar xvfz xampp-linux-1.8.1.tar.gz -C /opt
+	/opt/lampp/lampp start
+	ln -s /home/zhonghcc/DGY/web dgy
+Goagent CA
+	certutil -d sql:$HOME/.pki/nssdb -A -t TC -n "goagent" -i /home/zhonghcc/goagent/local/CA.crt
