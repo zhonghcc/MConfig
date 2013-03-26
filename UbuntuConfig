@@ -48,3 +48,4 @@ XAMPP
 	ln -s /home/zhonghcc/DGY/web dgy
 Goagent CA
 	certutil -d sql:$HOME/.pki/nssdb -A -t TC -n "goagent" -i /home/zhonghcc/goagent/local/CA.crt
+	设置 > 高级选项 > 管理证书… 授权中心 导入CA 全部勾选
